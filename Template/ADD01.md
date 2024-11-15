@@ -1,6 +1,13 @@
-# Crear un archivo .md con el contenido proporcionado por el usuario
-file_content = """
+
 # Iteración 1: Brownfield y Migración a Microservicios
+
+
+## Enfoque Brownfield
+
+Se planea hacer una migración tipo Brownfield, manteniendo la página en funcionamiento a medida que se hace una migración progresiva de los servicios del monolito a microservicios. 
+
+Se utilizará una **fachada o API Gateway**, que ayuda a abstraer el monolito y a que cualquier sistema, aplicación, o componente que consume los servicios de tu monolito actual no tengan que cambiar sus puntos de conexión. La fachada maneja las solicitudes y las distribuye entre el monolito y los nuevos microservicios, permitiéndote migrar funcionalidades sin interrumpir a los clientes.
+
 
 ## Atributos de Calidad
 
@@ -28,11 +35,7 @@ file_content = """
 - Un enfoque brownfield permite reducir costos iniciales de infraestructura al no requerir reemplazos completos, y priorizar mejoras donde se necesiten, lo cual ayuda a maximizar la relación costo-beneficio.
 - La inversión se realiza de forma incremental y controlada, permitiendo evaluar el retorno de inversión en cada fase de migración.
 
-## Enfoque Brownfield
 
-Se planea hacer una migración tipo Brownfield, manteniendo la página en funcionamiento a medida que se hace una migración progresiva de los servicios del monolito a microservicios. 
-
-Se utilizará una **fachada o API Gateway**, que ayuda a abstraer el monolito y a que cualquier sistema, aplicación, o componente que consume los servicios de tu monolito actual no tengan que cambiar sus puntos de conexión. La fachada maneja las solicitudes y las distribuye entre el monolito y los nuevos microservicios, permitiéndote migrar funcionalidades sin interrumpir a los clientes.
 
 ## Requerimientos Funcionales de la Migración
 
@@ -57,11 +60,5 @@ Se utilizará una **fachada o API Gateway**, que ayuda a abstraer el monolito y 
 ## Restricciones
 - **Compatibilidad con HTTP/REST:** El sistema debe implementar API REST para asegurar compatibilidad de acceso desde clientes PC y móviles.
 - **Separación de Datos:** Los datos deben almacenarse en bases de datos separadas por servicio (Clientes y Pedidos).
-"""
 
-# Escribir el contenido en un archivo .md
-file_path = "/mnt/data/iteracion1_brownfield.md"
-with open(file_path, "w") as file:
-    file.write(file_content)
 
-file_path
