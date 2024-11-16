@@ -1,15 +1,30 @@
-# {short title, representative of solved problem and found solution}
-
+# Arquitectura de referencia para la migración del monolito
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+Se planea realizar una migración de tipo Brownfield, manteniendo la página operativa mientras se lleva a cabo una transición progresiva de los servicios del monolito a microservicios, sin interrumpir la experiencia de los clientes
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+### Tecnologias para crear los microservicios
+* Spring Boot
+* Micronaut
+* Quarkus
+
+
+### contenedorización de microservicios en el sistema
+
+* Docker
+* Kubernetes (para la orquestación de contenedores)
+* Entornos virtualizados tradicionales (por ejemplo, con máquinas virtuales).
+  
+### API Gateway para gestionar la comunicación entre clientes y microservicios
+
+* Kong API Gateway
+* AWS API Gateway
+* NGINX
+* Traefik
+
+  
 
 ## Decision Outcome
 
