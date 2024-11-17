@@ -14,7 +14,7 @@
 ## Atributos de calidad
 
 ### 1. Seguridad
-- **Clientes (RF-01)**: Asegurar autenticación y autorización, encriptación de datos en tránsito y en reposo, cumpliendo normativas como GDPR.
+- **Clientes (RF-01)**: Asegurar autenticación y autorización, encriptación de datos en tránsito y en reposo, cumpliendo normativas como GDPR (General Data Protection Regulation).
 - **Pagos (RF-5, RF-6)**: Integrar con la pasarela de pagos cumpliendo protocolos de seguridad como PCI-DSS.
 
 ### 2. Disponibilidad
