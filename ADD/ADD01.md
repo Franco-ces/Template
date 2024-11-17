@@ -8,6 +8,8 @@ Se planea hacer una migración tipo Brownfield, manteniendo la página en funcio
 
 Se utilizará una **fachada o API Gateway**, que ayuda a abstraer el monolito y a que cualquier sistema, aplicación, o componente que consume los servicios de tu monolito actual no tengan que cambiar sus puntos de conexión. La fachada maneja las solicitudes y las distribuye entre el monolito y los nuevos microservicios, permitiéndote migrar funcionalidades sin interrumpir a los clientes.
 
+Los microservicios seran creados y Administrados con Spring Boot y Docker.
+
 
 ## Atributos de Calidad
 
@@ -49,7 +51,7 @@ Se utilizará una **fachada o API Gateway**, que ayuda a abstraer el monolito y 
 - **RF-05:** Mantener una sincronización bidireccional temporal entre el monolito y los microservicios, de forma que ambos puedan operar en paralelo sin pérdida de datos o inconsistencia.
 - **RF-06:** Implementar mecanismos de auditoría para verificar la integridad y precisión de los datos migrados y sincronizados.
 
-### 3. Microservicios
+### 3. Microservicios 
 - **Clientes:** Gestiona datos personales y de contacto de clientes, acceso crítico.
 - **Pedidos:** Controla pedidos de clientes con límites de intentos y procesamiento en tres fases.
 - **Reparto y Rutas:** Asigna y optimiza rutas para la entrega de pedidos.
